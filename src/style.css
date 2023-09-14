@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  font-family: JetBrains Mono;
+  color: lightgrey;
+}
+.textArea {
+  width: 306px;
+  outline: none;
+  background-color: #24232b;
+  height: 30px;
+  font-family: "Jetbrains Mono";
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  padding: 10px;
+  resize: none;
+  color: lightgrey;
+  position: relative;
+}
+.icon-btn {
+  height: 6px;
+  width: auto;
+  position: absolute;
+  z-index: 2;
+  top: 160px;
+  right: 510px;
+  background: none;
+  border: none;
+  color: #a4ffaf;
+}
+.elements {
+  width: 326.5px;
+  background-color: #24232b;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.charlength {
+  display: inline-block;
+}
+.charP {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.zeroP {
+  display: inline-block;
+  margin-left: 140px;
+  color: #a4ffaf;
+  font-size: 20px;
+  font-weight: bold;
+}
+.includelabel {
+  display: inline-block;
+  font-family: "Jetbrains Mono";
+  margin-left: 15px;
+  color: white;
+}
+.checkbox {
+  display: inline-block;
+  width: 326px;
+}
+.checkbox1 {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.custom-slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 5px;
+  margin-left: 15px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.strength {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 90%;
+  background-color: #333333;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.strength p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-left: 10px;
+}
+.inside-div {
+  display: inline-block;
+  margin-left: 150px;
+  height: 19px;
+  margin-top: 11px;
+}
+.inside-div div {
+  display: inline-block;
+  height: 15px;
+  width: 3px;
+  border: 2px solid #a4ffaf;
+  margin: 2px;
+}
+
+.btn {
+  height: 40px;
+  width: 90%;
+  margin: 15px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #a4ffaf;
+  font-family: "Jetbrains Mono";
+  font-weight: 600;
+}
+/* Mobile Devices (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .textArea {
+    width: 93%;
+    font-size: 16px;
+  }
+  .icon-btn {
+    position: absolute;
+    top: 29%;
+    right: 15%;
+  }
+  .charlength {
+    margin-bottom: 10px;
+  }
+  .charP {
+    margin-left: 15px;
+  }
+  .zeroP {
+    margin-left: 136px;
+  }
+}
+
+/* iPad (Portrait) */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  body {
+    font-size: 16px;
+  }
+  .textArea {
+    width: 60%;
+    font-size: 18px;
+  }
+  .icon-btn {
+    top: 10px;
+    right: 10px;
+  }
+  .charlength {
+    text-align: center;
+  }
+}
+
+/* iPad (Landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 16px;
+  }
+  .textArea {
+    width: 60%;
+    font-size: 18px;
+  }
+  .icon-btn {
+    top: 10px;
+    right: 10px;
+  }
+  .charlength {
+    text-align: center;
+  }
+}
