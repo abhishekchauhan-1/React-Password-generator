@@ -20,7 +20,7 @@ p {
 }
 .textArea {
   width: 324px;
-  height: 60px;
+  height: 50px;
   background-color: #24232b;
   color: lightgrey;
 }
@@ -30,7 +30,7 @@ p {
 }
 .textElement{
   height: 30px;
-  width: 80%;
+  width: 78%;
   background-color: #24232b;
   font-family: "Jetbrains Mono";
   font-size: 20px;
@@ -45,15 +45,12 @@ p {
     outline: none;
 }
 .icon-btn {
-  height: 6px;
-  width: auto;
-  position: absolute;
-  z-index: 2;
-  top: 160px;
-  right: 510px;
+  height: 15px;
   background: none;
   border: none;
   color: #a4ffaf;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .elements {
   width: 326.5px;
@@ -168,9 +165,7 @@ p {
     outline: none;
   }
   .icon-btn {
-    position: absolute;
-    top: 29%;
-    right: 15%;
+   
   }
   .charlength {
     margin-bottom: 10px;
@@ -179,7 +174,7 @@ p {
     margin-left: 15px;
   }
   .zeroP {
-    margin-left: 136px;
+    margin-left: 146px;
   }
 }
 
@@ -198,9 +193,8 @@ p {
     border: none;
     outline: none;
   }
-  .icon-btn {
-    top: 10px;
-    right: 10px;
+  .icon-btn{
+
   }
   .charlength {
     text-align: center;
