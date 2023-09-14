@@ -40,6 +40,10 @@ p {
   resize: none;
   
 }
+.textElement:focus{
+    border: none;
+    outline: none;
+}
 .icon-btn {
   height: 6px;
   width: auto;
