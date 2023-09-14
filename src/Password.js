@@ -86,7 +86,7 @@ class Password extends Component {
       <div className="main-container">
         <p>Password Generator</p>
         <div className="textArea">
-        <textarea className="textElement" defaultValue={password} placeholder="P4$5W0rD!"></textarea>
+        <textarea className="textElement" defaultValue={password} placeholder="P4$5W0rD!" readOnly></textarea>
         <button className="icon-btn" onClick={this.copyToClipBoard}>
           <FontAwesomeIcon className="icon-btn" icon={faCopy} />
         </button>
