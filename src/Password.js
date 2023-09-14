@@ -10,7 +10,6 @@ class Password extends Component {
     super();
     this.state = {
       sliderValue: 0,
-      length: 18,
       isUpperCase: false,
       isLowerCase: false,
       includeNumbers: false,
@@ -22,7 +21,6 @@ class Password extends Component {
   generatePassword = () => {
     const {
       sliderValue,
-      length,
       isLowerCase,
       isUpperCase,
       includeNumbers,
@@ -81,17 +79,19 @@ class Password extends Component {
       isLowerCase,
       includeNumbers,
       includeSymbols,
-      sliderValue,
       password
     } = this.state;
 
     return (
       <div className="main-container">
         <p>Password Generator</p>
-        <textarea className="textArea" defaultValue={password} placeholder="P4$5W0rD!"></textarea>
+        <div className="textArea">
+        <textarea className="textElement" defaultValue={password} placeholder="P4$5W0rD!"></textarea>
         <button className="icon-btn" onClick={this.copyToClipBoard}>
           <FontAwesomeIcon icon={faCopy} />
         </button>
+        </div>
+        
         <div className="elements">
           <div className="charlength">
             <p className="charP">Character Length</p>
